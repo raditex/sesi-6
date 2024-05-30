@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegEx Character Set</title>
+</head>
+<body>
+    <h1>RegEx Character Set</h1>
+
+    <script>
+        // melihat pola karakter pertamanya, harus mengandung salah 1 dari yang berada di dalam kurung siku (a, b, c, d, atau e)
+        // let pola = /[abcde]../;
+        let pola = /[a-e]../;
+
+        console.log(pola.test('abaa'));     // true
+        console.log(pola.test('fba'));      // false, karena f tidak ada di dalam kurung siku
+        console.log(pola.test('1dd'));      // false, karena 1 tidak ada di dalam kurung siku
+        console.log(pola.test('add'));      // true
+        console.log(pola.test(' dd'));      // false
+        console.log(pola.test('belajar'));  // true
+
+
+
+    </script>
+
+</body>
+</html>

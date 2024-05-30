@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegEx</title>
+</head>
+<body>
+    <h1>RegEx / Regular Expression</h1>
+
+    <script>
+        /*
+            cara membuat / deklarasi regex 
+            1. menggunakan keyword      ==>  new RegExp(...)
+               Format: 
+                let namavariabel = new RegExp(pola)
+                let namavariabel = new RegExp(pola, flag)
+
+            2. menggunakan literal      ==>  /.../
+               Format: 
+                let namavariabel = /pola/;
+                let namavariabel = /pola/flag;
+
+            Flag / modifier: 
+            - g     ==> global / mencari di seluruh string (dari awal s.d. akhir)
+            - i     ==> case insensitive / mengabaikan huruf besar / kecil (besar / kecilnya huruf dianggap sama)
+            
+        */
+
+        // menggunakan constructor RegExp()
+        var pola = new RegExp("JavaScript");
+        console.log(pola);
+        console.log(typeof pola);
+        
+        // menggunakan cara literal / langung 
+        var pola2 = /Java/;
+        console.log(pola);
+        console.log(typeof pola);
+        
+    </script>
+
+</body>
+</html>

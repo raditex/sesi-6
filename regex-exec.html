@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegEx Exec</title>
+</head>
+<body>
+    <h1>RegEx Exec</h1>
+
+    <script>
+        let kalimat = "1 jam sama dengan 60 menit, juga sama dengan 3600 detik";
+
+        let pola1 = /\d+/;  // mencari angka
+        let pola2 = /\d+/g;  // mencari angka dengan flag / modifier global
+
+        console.log('Exec pola1');
+        console.log(pola1.exec(kalimat)); 
+        console.log(pola1.exec(kalimat));
+        console.log(pola1.exec(kalimat));
+
+        console.log('Exec pola2');
+        console.log(pola2.exec(kalimat));
+        console.log(pola2.exec(kalimat));
+        console.log(pola2.exec(kalimat));
+        console.log(pola2.exec(kalimat));
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetInterval</title>
+</head>
+<body>
+    <h1>SetInterval</h1>
+
+    <script>
+        /* setinterval   ==> mengeksekusi kode program setiap x satuan waktu; namun eksekusi kode program di bawahnya terus berlanjut seperti biasa (tidak menunggu bagian setinterval selesai dieksekusi) 
+
+        Format: 
+            setinterval(() => {
+
+            }, waktu_tunggu_dalam_milidetik);
+
+        */
+        document.write('Dieksekusi di awal..');
+        document.write('Dieksekusi di awal juga..');
+
+        setInterval(() => {
+            document.write('Saya dieksekusi setiap 1 detik');
+        }, 1000);
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegEx Test</title>
+</head>
+<body>
+    <h1>RegEx Test</h1>
+
+    <script>
+        let pola1 = /JavaScript/;
+        let pola2 = /Belajar/;
+        let pola3 = /Javascript/;
+
+        // menggunakan flag i (case insensitive)
+        let pola4 = /javascript/i;
+
+        let kalimat = "Saya Belajar JavaScript";
+
+        console.log(pola1.test(kalimat));   // true
+        console.log(pola2.test(kalimat));   // true
+        console.log(pola3.test(kalimat));   // false
+        console.log(pola4.test(kalimat));   // false
+
+
+    </script>
+
+</body>
+</html>

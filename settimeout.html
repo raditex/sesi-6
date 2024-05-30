@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeout</title>
+</head>
+<body>
+    <h1>SetTimeout</h1>
+
+    <script>
+        setTimeout(() => {
+            console.log("Saya delay 3000 milidetik / 3 detik");
+        }, 3000);
+
+        console.log('Halo..');
+
+        console.log('Apa kabar?..');
+
+        /* settimeout   ==> menunda waktu eksekusi selama satuan waktu tertentu; namun eksekusi kode program di bawahnya terus berlanjut seperti biasa (tidak menunggu bagian settimeout selesai dieksekusi) 
+
+        Format: 
+            setTimeout(() => {
+
+            }, waktu_tunggu_dalam_milidetik);
+
+        */
+
+        setTimeout(() => {
+            console.log("Saya delay 1000 milidetik / 1 detik");
+        }, 1000);
+
+        
+        console.log('Prakerja');
+        console.log('Hacktiv8');
+    </script>
+
+</body>
+</html>
